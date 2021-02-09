@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <style>
+            table{
+                border-collapse: collapse; 
+            }
+            td{
+                border: 1px solid #ccc; 
+                padding: 5px;
+            }
+            tr:hover 
+            {
+                background: #f8f7f7;
+            }
+            td:hover 
+            {
+                background: #d9f5f7;
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+
+            <div class="col-12 col-md-12 col-xl-12 py-md-12 pl-md-12 bd-content">
+
+                <table class="table">
+                    <tr><td>code</td><td>billingAccountId</td><td>billingAccountName</td><td>stage</td><td>totalAmount</td><td>type</td><td>date</td><td>dueDate</td><td>description</td></tr>
+<tr><td>000433</td><td>2704</td><td>Convert</td><td>Unpaid</td><td>33.32</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000476</td><td>2729</td><td>E-Hmara, LLC</td><td>Paid</td><td>0</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000439</td><td>2710</td><td>SoftKey</td><td>Paid</td><td>5949.94</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000480</td><td>2706</td><td>ITPro</td><td>Paid</td><td>0</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000446</td><td>2717</td><td>Conterra</td><td>Paid</td><td>2559.18</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000454</td><td>2727</td><td>GSI (ТОВ «Група «Системна інтеграція»)</td><td>Unpaid</td><td>133.5</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000452</td><td>2725</td><td>iTsupport</td><td>Unpaid</td><td>7</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000441</td><td>2711</td><td>Wise IT</td><td>Unpaid</td><td>3140.8</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000473</td><td>3723</td><td>АДО ГРУПП</td><td>Unpaid</td><td>25.44</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000463</td><td>3120</td><td>VERNA LTD</td><td>Paid</td><td>181.46</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000465</td><td>3196</td><td>ТОВ «ЕсАй БІС»</td><td>Paid</td><td>474.88</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000447</td><td>2718</td><td>Альтинет</td><td>Unpaid</td><td>279.65</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000475</td><td>8676</td><td>Wesoft LLC</td><td>Unpaid</td><td>83.94</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000464</td><td>3163</td><td>TDB</td><td>Paid</td><td>35</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000438</td><td>2710</td><td>SoftKey</td><td>Paid</td><td>637.87</td><td>Credit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000443</td><td>2714</td><td>SAINTIS</td><td>Paid</td><td>496.83</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000468</td><td>3262</td><td>lcom</td><td>Paid</td><td>1257.53</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000472</td><td>3520</td><td>FLEX-IT</td><td>Paid</td><td>538.56</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000449</td><td>2720</td><td>Lantec</td><td>Unpaid</td><td>982.09</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000460</td><td>2883</td><td>ABK-Technologies</td><td>Unpaid</td><td>131.44</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000471</td><td>3516</td><td>FOP Nedoluzhko</td><td>Unpaid</td><td>14.84</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000440</td><td>2711</td><td>Wise IT</td><td>Paid</td><td>25.58</td><td>Credit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000444</td><td>2715</td><td>Уні-Сервіс</td><td>Unpaid</td><td>151.06</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000442</td><td>2713</td><td>MT, TOB</td><td>Paid</td><td>1710.14</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000456</td><td>2729</td><td>E-Hmara, LLC</td><td>Paid</td><td>333.9</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000477</td><td>2706</td><td>ITPro</td><td>Paid</td><td>0</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000461</td><td>2897</td><td>Vamark</td><td>Paid</td><td>72.08</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000448</td><td>2719</td><td>GigaCloud LLC</td><td>Unpaid</td><td>515.9</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000453</td><td>2726</td><td>Интегро ИТ</td><td>Paid</td><td>1237.02</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000462</td><td>2901</td><td>ТОВ Танграм Україна</td><td>Paid</td><td>0</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000437</td><td>2709</td><td>Softlist</td><td>Paid</td><td>556.22</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000459</td><td>2882</td><td>ТОВ ІТ-ІНТЕГРАТОР</td><td>Paid</td><td>488.28</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000467</td><td>3219</td><td>ООО Форвард-КТР</td><td>Unpaid</td><td>100</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000469</td><td>3504</td><td>Zeon Ukraine, LLC</td><td>Unpaid</td><td>175</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000479</td><td>2706</td><td>ITPro</td><td>Paid</td><td>0</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000478</td><td>2706</td><td>ITPro</td><td>Paid</td><td>0</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000445</td><td>2716</td><td>infologic</td><td>Paid</td><td>1967.86</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000450</td><td>2721</td><td>INFOTRADE</td><td>Unpaid</td><td>34.8</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000435</td><td>2707</td><td>SOFTCOM</td><td>Paid</td><td>92.88</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000434</td><td>2706</td><td>ITPro</td><td>Paid</td><td>373.06</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000457</td><td>2730</td><td>ISSP</td><td>Paid</td><td>181.82</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000458</td><td>2731</td><td>Techsvit</td><td>Paid</td><td>7</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000436</td><td>2708</td><td>Softico</td><td>Paid</td><td>1283.84</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000466</td><td>3204</td><td>KI-WI COM</td><td>Paid</td><td>25.44</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000451</td><td>2724</td><td>Silvery LLC</td><td>Paid</td><td>517.8</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000474</td><td>3997</td><td>ООО Мост Ай Ти</td><td>Paid</td><td>17.82</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000455</td><td>2728</td><td>Нео-сервіс</td><td>Paid</td><td>826.8</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+<tr><td>000470</td><td>3506</td><td>ITPROM</td><td>Unpaid</td><td>54.06</td><td>Debit</td><td>2017-12-28</td><td>2018-01-27</td><td></td></tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

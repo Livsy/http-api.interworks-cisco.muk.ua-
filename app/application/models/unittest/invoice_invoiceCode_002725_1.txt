@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <style>
+            table{
+                border-collapse: collapse; 
+            }
+            td{
+                border: 1px solid #ccc; 
+                padding: 5px;
+            }
+            tr:hover 
+            {
+                background: #f8f7f7;
+            }
+            td:hover 
+            {
+                background: #d9f5f7;
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+
+            <div class="col-12 col-md-12 col-xl-12 py-md-12 pl-md-12 bd-content">
+
+                <table class="table">
+                    <tr><td>id</td><td>billingPeriodStart</td><td>billingPeriodEnd</td><td>productId</td><td>productCode</td><td>productName</td><td>productTypeId</td><td>productTypeName</td><td>unit</td><td>costPrice</td><td>finalPrice</td><td>costTotal</td><td>finalTotal</td><td>subscriptionsId</td><td>subscriptionsName</td><td>subscriptionsExternalId</td><td>subscriptionsQuantity</td><td>subscriptionsStartDate</td><td>subscriptionsEndDate</td><td>subscriptionsStatus</td><td>subscriptionsAccountId</td><td>subscriptionsAccountName</td><td>infoTotal</td><td>infoUnitPrice</td><td>infoFinalUnitPrice</td><td>infoQuantity</td><td>infoPriceProtectionPeriodEndDate</td><td>infoProtecetedSalesPrice</td></tr>
+<tr><td>aedabc01-31c1-4ef7-afb8-06e99b5257eb</td><td>2018-10-30</td><td>2018-11-27</td><td>6e3f540f-2266-4f97-a0ed-a7e60111c298</td><td>796B6B5F-613C-4E24-A17C-EBA730D49C02</td><td>Office 365 корпоративный E3 (Enterprise)</td><td>37fd8e36-fb1f-4b86-a9c9-c04fe35ad863</td><td>Microsoft Cloud Services</td><td>Month</td><td>14.97</td><td>15.87</td><td>44.91</td><td>47.61</td><td>c3508c3c-df72-4f50-b77d-9506cc593753</td><td>UNL - Office 365 корпоративный E3 (Enterprise)</td><td>F1968997-2643-421D-8C35-A51BDD0A012C</td><td>3</td><td>2018-10-30</td><td>2018-11-27</td><td>In-Active</td><td>2777</td><td>UNL</td><td>135.68</td><td>16.96</td><td>135.68</td><td>8</td><td>2019-06-28</td><td>20</td></tr>
+<tr><td>c8cbe374-6e29-409d-918c-8ede7c853039</td><td>2018-10-30</td><td>2018-11-27</td><td>ba58695a-5b74-4b86-b27b-a7e60111c2b5</td><td>BD938F12-058F-4927-BBA3-AE36B1D2501C</td><td>Office 365 бизнес базовый (Small business)</td><td>37fd8e36-fb1f-4b86-a9c9-c04fe35ad863</td><td>Microsoft Cloud Services</td><td>Month</td><td>3.74</td><td>3.97</td><td>37.4</td><td>39.7</td><td>e3d17fbd-47ba-4205-a940-421fb4de99c1</td><td>ТОВ «ІНТЕЛЛОГЕЙТ УКРАЇНА» - Office 365 бизнес базовый (Small business)</td><td>8D2BCD81-7EDA-44BD-8A96-AE513C1EF76F</td><td>10</td><td>2018-10-30</td><td>2018-11-27</td><td>In-Active</td><td>9440</td><td>ТОВ «ІНТЕЛЛОГЕЙТ УКРАЇНА»</td><td>42.4</td><td>4.24</td><td>42.4</td><td>10</td><td>2019-02-27</td><td>5</td></tr>
+<tr><td>4517272e-89c1-4e1f-9512-5d0e22cd4ad7</td><td>2018-10-30</td><td>2018-11-27</td><td>491aa2d9-e35d-494b-81e0-a7e60111c298</td><td>A2706F86-868D-4048-989B-0C69E5C76B63</td><td>Расширенная защита от угроз Exchange Online</td><td>37fd8e36-fb1f-4b86-a9c9-c04fe35ad863</td><td>Microsoft Cloud Services</td><td>Month</td><td>1.5</td><td>1.59</td><td>15</td><td>15.9</td><td>e3d17fbd-47ba-4205-a940-421fb4de99c1</td><td>ТОВ «ІНТЕЛЛОГЕЙТ УКРАЇНА» - Office 365 бизнес базовый (Small business)</td><td>8D2BCD81-7EDA-44BD-8A96-AE513C1EF76F</td><td>10</td><td>2018-10-30</td><td>2018-11-27</td><td>In-Active</td><td>9440</td><td>ТОВ «ІНТЕЛЛОГЕЙТ УКРАЇНА»</td><td>42.4</td><td>4.24</td><td>42.4</td><td>10</td><td>2019-02-27</td><td>5</td></tr>
+<tr><td>e33203c4-7d80-48a9-97a1-6689be6a056f</td><td>2018-10-30</td><td>2018-11-22</td><td>76c467f2-a268-4292-99fc-a7e60111c278</td><td>031C9E47-4802-4248-838E-778FB1D2CC05</td><td>Office 365 бизнес премиум (Small business)</td><td>37fd8e36-fb1f-4b86-a9c9-c04fe35ad863</td><td>Microsoft Cloud Services</td><td>Month</td><td>7.74</td><td>8.21</td><td>38.7</td><td>41.05</td><td>1dc2c618-9185-468d-8f7d-02344b5baeb4</td><td>ТОВ «ІНТЕЛЛОГЕЙТ УКРАЇНА» - Office 365 бизнес премиум (Small business)</td><td>47623EE9-D1D6-4B4E-8DA7-E63FA9F27296</td><td>5</td><td>2018-10-30</td><td>2018-11-22</td><td>In-Active</td><td>9440</td><td>ТОВ «ІНТЕЛЛОГЕЙТ УКРАЇНА»</td><td>53</td><td>10.6</td><td>53</td><td>5</td><td>2019-02-22</td><td>12.5</td></tr>
+<tr><td>4ec8883a-ab42-445c-ab85-9d0c2f7aa416</td><td>2018-10-30</td><td>2018-11-22</td><td>491aa2d9-e35d-494b-81e0-a7e60111c298</td><td>A2706F86-868D-4048-989B-0C69E5C76B63</td><td>Расширенная защита от угроз Exchange Online</td><td>37fd8e36-fb1f-4b86-a9c9-c04fe35ad863</td><td>Microsoft Cloud Services</td><td>Month</td><td>1.24</td><td>1.32</td><td>1.24</td><td>1.32</td><td>1dc2c618-9185-468d-8f7d-02344b5baeb4</td><td>ТОВ «ІНТЕЛЛОГЕЙТ УКРАЇНА» - Office 365 бизнес премиум (Small business)</td><td>47623EE9-D1D6-4B4E-8DA7-E63FA9F27296</td><td>1</td><td>2018-10-30</td><td>2018-11-22</td><td>In-Active</td><td>9440</td><td>ТОВ «ІНТЕЛЛОГЕЙТ УКРАЇНА»</td><td>53</td><td>10.6</td><td>53</td><td>5</td><td>2019-02-22</td><td>12.5</td></tr>
+<tr><td>4ec8883a-ab42-445c-ab85-9d0c2f7aa416</td><td>2018-10-30</td><td>2018-11-22</td><td>491aa2d9-e35d-494b-81e0-a7e60111c298</td><td>A2706F86-868D-4048-989B-0C69E5C76B63</td><td>Расширенная защита от угроз Exchange Online</td><td>37fd8e36-fb1f-4b86-a9c9-c04fe35ad863</td><td>Microsoft Cloud Services</td><td>Month</td><td>1.24</td><td>1.32</td><td>1.24</td><td>1.32</td><td>1dc2c618-9185-468d-8f7d-02344b5baeb4</td><td>ТОВ «ІНТЕЛЛОГЕЙТ УКРАЇНА» - Office 365 бизнес премиум (Small business)</td><td>47623EE9-D1D6-4B4E-8DA7-E63FA9F27296</td><td>1</td><td>2018-10-30</td><td>2018-11-22</td><td>In-Active</td><td>9440</td><td>ТОВ «ІНТЕЛЛОГЕЙТ УКРАЇНА»</td><td>53</td><td>10.6</td><td>53</td><td>5</td><td>2019-02-22</td><td>12.5</td></tr>
+<tr><td>4ec8883a-ab42-445c-ab85-9d0c2f7aa416</td><td>2018-10-30</td><td>2018-11-22</td><td>491aa2d9-e35d-494b-81e0-a7e60111c298</td><td>A2706F86-868D-4048-989B-0C69E5C76B63</td><td>Расширенная защита от угроз Exchange Online</td><td>37fd8e36-fb1f-4b86-a9c9-c04fe35ad863</td><td>Microsoft Cloud Services</td><td>Month</td><td>1.24</td><td>1.32</td><td>1.24</td><td>1.32</td><td>1dc2c618-9185-468d-8f7d-02344b5baeb4</td><td>ТОВ «ІНТЕЛЛОГЕЙТ УКРАЇНА» - Office 365 бизнес премиум (Small business)</td><td>47623EE9-D1D6-4B4E-8DA7-E63FA9F27296</td><td>1</td><td>2018-10-30</td><td>2018-11-22</td><td>In-Active</td><td>9440</td><td>ТОВ «ІНТЕЛЛОГЕЙТ УКРАЇНА»</td><td>53</td><td>10.6</td><td>53</td><td>5</td><td>2019-02-22</td><td>12.5</td></tr>
+<tr><td>4ec8883a-ab42-445c-ab85-9d0c2f7aa416</td><td>2018-10-30</td><td>2018-11-22</td><td>491aa2d9-e35d-494b-81e0-a7e60111c298</td><td>A2706F86-868D-4048-989B-0C69E5C76B63</td><td>Расширенная защита от угроз Exchange Online</td><td>37fd8e36-fb1f-4b86-a9c9-c04fe35ad863</td><td>Microsoft Cloud Services</td><td>Month</td><td>1.24</td><td>1.32</td><td>1.24</td><td>1.32</td><td>1dc2c618-9185-468d-8f7d-02344b5baeb4</td><td>ТОВ «ІНТЕЛЛОГЕЙТ УКРАЇНА» - Office 365 бизнес премиум (Small business)</td><td>47623EE9-D1D6-4B4E-8DA7-E63FA9F27296</td><td>1</td><td>2018-10-30</td><td>2018-11-22</td><td>In-Active</td><td>9440</td><td>ТОВ «ІНТЕЛЛОГЕЙТ УКРАЇНА»</td><td>53</td><td>10.6</td><td>53</td><td>5</td><td>2019-02-22</td><td>12.5</td></tr>
+<tr><td>4ec8883a-ab42-445c-ab85-9d0c2f7aa416</td><td>2018-10-30</td><td>2018-11-22</td><td>491aa2d9-e35d-494b-81e0-a7e60111c298</td><td>A2706F86-868D-4048-989B-0C69E5C76B63</td><td>Расширенная защита от угроз Exchange Online</td><td>37fd8e36-fb1f-4b86-a9c9-c04fe35ad863</td><td>Microsoft Cloud Services</td><td>Month</td><td>1.24</td><td>1.32</td><td>1.24</td><td>1.32</td><td>1dc2c618-9185-468d-8f7d-02344b5baeb4</td><td>ТОВ «ІНТЕЛЛОГЕЙТ УКРАЇНА» - Office 365 бизнес премиум (Small business)</td><td>47623EE9-D1D6-4B4E-8DA7-E63FA9F27296</td><td>1</td><td>2018-10-30</td><td>2018-11-22</td><td>In-Active</td><td>9440</td><td>ТОВ «ІНТЕЛЛОГЕЙТ УКРАЇНА»</td><td>53</td><td>10.6</td><td>53</td><td>5</td><td>2019-02-22</td><td>12.5</td></tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,2 @@
+id;externalId;name;value;valueExternal;code
+4C617CFA-B53A-4277-ABE1-5AD48FE9C387;MicrosoftCloudServicesMSAzure;MS Azure Plans;Microsoft Azure (Enterprise);MicrosoftCloudServicesMSAzure_/fbf178a5-144e-46d1-aa81-612c2d3f97f4/Offers/MS-AZR-0145P;/fbf178a5-144e-46d1-aa81-612c2d3f97f4/Offers/MS-AZR-0145P

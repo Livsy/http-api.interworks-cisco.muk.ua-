@@ -1,0 +1,2 @@
+name;total;unitPrice;discount;discountType;finalUnitPrice;quantity;priceListName;priceListPricingMethodPricingMethod;priceListPricingMethodAmount;priceListPricingMethodPrice;priceProtectionPeriodEndDate;priceProtectionProtecetedSalesPrice;priceProtectionProtecetedCostPrice
+ООО Бизнес Ангел - Office 365 бизнес (Small business);6.88;6.88;0;Percentage;6.88;1;Partner Softkey price;Percent Markup - Cost Price;4.19;6.87654;2019-07-01T23:59:00+02:00;;
