@@ -35,10 +35,24 @@ class CiscoController extends BaseController
         'client_secret' 	=> 'PhZmecqpSaWJ9AKuqY5k26D8',
     ];
 */
+
+/*
+// Cisco_XaaS@muk.cloud
     var $conf = [
         'client_id' 	=> 'e37b439c-901c-47fc-b0e9-b4312a4da2bc',
         'client_secret' 	=> '9565bfc7-a399-42be-b515-bba53cd0c861',
     ];
+*/
+
+    // https://anypoint.mulesoft.com/apiplatform/apx/#/apps/624120
+    // https://apidocs-prod.cisco.com/explore;category=Commerce_APIs;sgroup=PMI - Request API Access
+    var $conf = [
+        'client_id' 	    => 'a75106a9cc8843d6bd0eae4ed37ed688',
+        'client_secret' 	=> '4381A55A382c4fB6A0Fd80471c12BD13',
+    ];
+
+
+
 
 	var $accessToken = '';
 	
@@ -70,6 +84,33 @@ button "Autorize"
 
 
 
+    // Get Smart Accounts
+    // Documentation: https://apidocs-prod.cisco.com/explore;category=Plug_&_Play_Connect_APIs;sgroup=Smart_Account_Services;epname=Get_Smart_Accounts
+    // Output: {"status":"COMPLETE","message":"NO DATA FOUND","messageCode":"DMS-ERR-121"}
+    function getSmartAccounts()
+    {
+        $token = $this->oauth();
+
+        echo $token.'<br>';
+
+        $output = $this->getData([
+            'url'           => "https://swapi.cisco.com/services/api/software/dms/v2/smartaccounts",
+            'header'        => 1,
+            'httpHeader'    => [
+//                    'Content-Type: application/x-www-form-urlencoded',
+                'authorization: Bearer ' .$token,
+                'Accept: application/json',
+                'Content-Type:application/json'
+            ],
+            'post'          => 0,
+            'postField'     => '',
+
+            'httpGet' => 1,
+            'getfields'     => [],
+        ]);
+
+        var_dump($output); exit;
+    }
 
 
 
@@ -87,7 +128,7 @@ button "Autorize"
         echo $token.'<br>';
 
         $output = $this->getData([
-            'url'           => "https://swapi.cisco.com/services/api/smart-accounts-and-licensing/v1/accounts/bayaderagroup.com/license-subscriptions",
+            'url'           => "https://swapi.cisco.com/services/api/smart-accounts-and-licensing/v1/accounts/mukxaas38638/license-subscriptions",
             'header'        => 1,
             'httpHeader'    => [
 //                    'Content-Type: application/x-www-form-urlencoded',
@@ -255,6 +296,99 @@ button "Autorize"
     }
 
 
+    // Validate Provisioning
+    // Documentation:       https://apidocs-prod.cisco.com/explore;category=Commerce_APIs;sgroup=PMI;epname=Validate_Provisioning
+    // Link: http://api.interworks-cisco.muk.ua/cisco/contractsSearch
+    // 403 Forbidden - Not Authorized
+    function validateProvisioning()
+    {
+
+        $token = $this->oauth();
+
+        echo $token.'<br>';
+
+        $output = $this->getData([
+            'url'           => "https://apx-poe.cisco.com/ccw/api/v1.0/provisioning/validate",
+            'header'        => 1,
+            'httpHeader'    => [
+//                    'Content-Type: application/x-www-form-urlencoded',
+                'authorization: Bearer ' .$token,
+                'Accept: application/json',
+                'Content-Type:application/json'
+            ],
+            'post'          => 1,
+            'postField'     => '
+{
+  "uuid": "POEUUID_11022017_01111",
+  "createdBy": "ccoid",
+  "createdDateTime": "2021-02-15T22:01:59.787+0000",
+  "csbSubscriptionId": "POEcsbsub_11022017_01",
+  "csbOrderId": "POEcsbord_11022017_01",
+  "purchaseOrderNumber": "POEUUID_11022017_01",
+  "billingAddressId": 100000000,
+  "billingAddressName": "sample billing address name",
+  "currency": "USD",
+  "paymentMethod": "NET30",
+  "rejectDuplicatePO": "N",
+  "intialTerm": 12,
+  "autoRenewalTerm": 12,
+  "billingModel": "Monthly Billing",
+  "requestedStartDate": "2021-02-15",
+  "parties": [
+    {
+      "partyType": "End Customer",
+      "partyName": "TEST NOT REAL 2",
+      "addressLine1": "1217 Kildaire Farm Rd",
+      "addressLine2": "",
+      "city": "Cary",
+      "state": "NC",
+      "postalCode": "27511",
+      "country": "US",
+      "businessContactName": "dummyContact",
+      "businessContactEmail": "dummyContact@gmail.com",
+      "businessContactTelephone": "4078027828"
+    },
+    {
+      "partyType": "Reseller",
+      "partyName": "ALEXANDER OPEN SYSTEMS",
+      "addressLine1": "12980 FOSTER ST STE 300",
+      "addressLine2": "",
+      "city": "OVERLAND PARK",
+      "state": "KS",
+      "postalCode": "66213",
+      "country": "US",
+      "businessContactName": "test contact",
+      "businessContactEmail": "testcontact@AOS5.COM",
+      "businessContactTelephone": "913-307-2300ext2303",
+      "accountNumber": "38019164"
+    }
+  ],
+  "offers": [
+    {
+      "lineNumber": 1,
+      "offerSKU": "A-SPK-NU-M3",
+      "quantity": 1,
+      "csbCiscoKey": "2163146462363366067",
+      "offerDescription": "Spark M3 offer",
+      "provisioningAttributes": [
+        {
+          "attributeIdentifier": "0000",
+          "attributeName": "csbil.Provisioning Contact.EMAIL",
+          "attributeValue": "ordersimp-sapol1102201701@mailinator.com"
+        }
+      ]
+    }
+  ],
+  "tncacceptance": "Y"
+}            
+            ',
+
+            'httpGet' => 0,
+            'getfields'     => [],
+        ]);
+
+        var_dump($output); exit;
+    }
 
 
 
@@ -294,7 +428,37 @@ button "Autorize"
 
 
 
+    // Get Virtual Accounts
+    // Documentation: https://apidocs-prod.cisco.com/explore;category=Plug_&_Play_Connect_APIs;sgroup=Smart_Account_Services;epname=Get_Virtual_Accounts
+    function getVirtualAccounts()
+    {
+        $token = $this->oauth();
 
+        echo $token.'<br>';
+
+        $conf = [
+            'smartAccountDomain' => 'bayaderagroup.com', // bayaderagroup.com //
+            'accountType' => 'HOLDING', //  CUSTOMER  HOLDING
+        ];
+
+        $output = $this->getData([
+            'url'           => "https://swapi.cisco.com/services/api/software/dms/v2/smartaccounts/{$conf['smartAccountDomain']}/virtualaccounts",
+            'header'        => 1,
+            'httpHeader'    => [
+//                    'Content-Type: application/x-www-form-urlencoded',
+                'authorization: Bearer ' .$token,
+                'Accept: application/json',
+                'Content-Type:application/json'
+            ],
+            'post'          => 0,
+            'postField'     => '',
+
+            'httpGet' => 1,
+            'getfields'     => [],
+        ]);
+
+        var_dump($output); exit;
+    }
 
 
 

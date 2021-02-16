@@ -42,6 +42,9 @@ $routes->get('cisco/getLicenseSummaryByTag', 'CiscoController::getLicenseSummary
 
 $routes->get('cisco/contractsSearch', 'CiscoController::contractsSearch');
 $routes->get('cisco/licenseSubscriptionsUsage', 'CiscoController::licenseSubscriptionsUsage');
+$routes->get('cisco/getSmartAccounts', 'CiscoController::getSmartAccounts');
+$routes->get('cisco/getVirtualAccounts', 'CiscoController::getVirtualAccounts');
+$routes->get('cisco/validateProvisioning', 'CiscoController::validateProvisioning');
 
 
 
@@ -77,6 +80,15 @@ $routes->get('interworks/subscriptionCreateURL', 'InterworksController::subscrip
 $routes->get('interworks/subscriptionUpdateURL', 'InterworksController::subscriptionUpdateURL');
 $routes->get('interworks/validateSettingFieldsURL', 'InterworksController::validateSettingFieldsURL');
 $routes->get('interworks/validateSettingFieldsURL', 'InterworksController::validateSettingFieldsURL');
+$routes->get('interworks/CiscoProduct1', 'InterworksController::CiscoProduct1');
+$routes->get('interworks/subscriptionUpdate', 'InterworksController::subscriptionUpdate');
+$routes->get('interworks/subscriptionActivate', 'InterworksController::subscriptionActivate');
+$routes->get('interworks/subscriptionSuspend', 'InterworksController::subscriptionSuspend');
+
+$routes->add('interworks/addonCreate', 'InterworksController::addonCreate');
+$routes->add('interworks/addonUpdate', 'InterworksController::addonUpdate');
+$routes->add('interworks/addonDelete', 'InterworksController::addonDelete');
+
 
 
 
